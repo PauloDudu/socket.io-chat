@@ -1,4 +1,4 @@
-var socket = io('https://socket-io-chat-blush.vercel.app');
+var socket = io('https://dudu-chat-05a2e1e7e3c5.herokuapp.com/');
 
 function renderMessage(message) {
     $('.messages').append('<div class="message"><strong>'+ message.author +'</strong>: '+ message.message +'</div>')
