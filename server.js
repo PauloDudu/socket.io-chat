@@ -27,4 +27,4 @@ io.on('connection', socket => {
     })
 })
 
-server.listen(3000);
+server.listen('https://socket-io-chat-blush.vercel.app:3000');
