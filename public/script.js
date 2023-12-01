@@ -1,4 +1,4 @@
-var socket = io('http://localhost:3000');
+var socket = io('https://socket-io-chat-blush.vercel.app:3000');
 
 function renderMessage(message) {
     $('.messages').append('<div class="message"><strong>'+ message.author +'</strong>:'+ message.message +'</div>')
