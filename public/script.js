@@ -1,7 +1,7 @@
-var socket = io('https://socket-io-chat-blush.vercel.app:3000');
+var socket = io('http://socket-io-chat-blush.vercel.app');
 
 function renderMessage(message) {
-    $('.messages').append('<div class="message"><strong>'+ message.author +'</strong>:'+ message.message +'</div>')
+    $('.messages').append('<div class="message"><strong>'+ message.author +'</strong>: '+ message.message +'</div>')
 }
 
 socket.on('previousMessages', messages => {
